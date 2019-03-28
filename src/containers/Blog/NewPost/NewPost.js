@@ -27,9 +27,10 @@ class NewPost extends Component {
             post
         ).then(response => {
             console.log(response)
-            this.setState({
-                submitted: true
-            })
+            this.props.history.push('/')
+            // this.setState({
+            //     submitted: true
+            // })
         })
     }
 
